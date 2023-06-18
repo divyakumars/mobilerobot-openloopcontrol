@@ -8,26 +8,26 @@ To develop a python control code to move the mobilerobot along the predefined pa
 2. Python 3.7
 
 ## Procedure
-Step1:
+## Step1:
 Initiate the MobileRobot.
 
-Step2:
+## Step2:
 Connect your PC with the MobileRobot through Wi-Fi.
 
-Step3:
+## Step3:
 Open batter_level.py file and check the battery.
 
-Step4:
+## Step4:
 Open the other Python files and Program the movements of the robot using python.
 
-Step5:
+## Step5:
 Execute the python program and record the movements.
 
 
-<br/>
+
 
 ## Program
-```python
+
 from robomaster import robot
 import time
 from robomaster import camera
@@ -39,7 +39,7 @@ if _name_ == '_main_':
     ep_chassis = ep_robot.chassis
     ep_led = ep_robot.led
     ep_camera = ep_robot.camera
-          
+    '''      
     print("Video streaming started.....")
     ep_camera.start_video_stream(display=True, resolution = camera.STREAM_360P)
     ''' 
@@ -106,11 +106,13 @@ if _name_ == '_main_':
     ep_camera.stop_video_stream()
     print("Stopped video streaming.....")
     ep_robot.close()
-```
+
+
 
 ## MobileRobot Movement Image:
+![image](https://github.com/divyakumars/mobilerobot-openloopcontrol/assets/119393621/8dc839c0-bf02-482c-8818-5ce52da7b3ee)
 
-![robo](./img/robomaster.png)
+
 
 ![WhatsApp Image 2023-06-18 at 12 50 33](https://github.com/divyakumars/mobilerobot-openloopcontrol/assets/119393621/cf538554-530c-4037-9e6f-c77d760e10b9)
 
