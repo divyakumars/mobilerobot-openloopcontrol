@@ -27,7 +27,7 @@ Execute the python program and record the movements.
 
 
 ## Program
-
+```
 from robomaster import robot
 import time
 from robomaster import camera
@@ -39,7 +39,7 @@ if _name_ == '_main_':
     ep_chassis = ep_robot.chassis
     ep_led = ep_robot.led
     ep_camera = ep_robot.camera
-    '''      
+          
     print("Video streaming started.....")
     ep_camera.start_video_stream(display=True, resolution = camera.STREAM_360P)
     ''' 
@@ -106,9 +106,7 @@ if _name_ == '_main_':
     ep_camera.stop_video_stream()
     print("Stopped video streaming.....")
     ep_robot.close()
-
-
-
+``` 
 ## MobileRobot Movement Image:
 ![image](https://github.com/divyakumars/mobilerobot-openloopcontrol/assets/119393621/8dc839c0-bf02-482c-8818-5ce52da7b3ee)
 
@@ -120,7 +118,6 @@ if _name_ == '_main_':
 
 
 ## MobileRobot Movement Video:
-
 https://youtu.be/ZTXaqlw2-4c
 
 ## Result:
